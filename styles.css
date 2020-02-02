@@ -143,13 +143,19 @@ body {
 /* Section */
 .main-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  padding-top: 7rem;
-  padding-left: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7rem 0 0 5rem;
 }
 
+.content {
+  width: 50%;
+}
+
+.product-holder {
+  width: 50%;
+  overflow: hidden;
+}
 
 .new-heading {
   display: flex;
@@ -217,7 +223,6 @@ body {
   color: #232941;
   animation: toleft 2s cubic-bezier(.68, .03, .2, 1.06);
   line-height: 7.5rem;
-
 }
 
 .post-heading {
@@ -277,25 +282,19 @@ body {
 }
 
 .product-holder {
-  display: inline-block;
-  position: relative;
-  right: -20rem;
-  width: 90rem;
   animation: tocross 4s cubic-bezier(.68, .03, .2, 1.06);
 }
 
 /* End of section */
 /* Footer */
 .footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-right: 5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   animation: tobottom 4s cubic-bezier(.68, .03, .2, 1.06);
 }
-
-
 
 .challenge {
   margin-right: .5rem;
@@ -452,27 +451,207 @@ body {
     transform: translateX(0);
   }
 }
+
 /* End of animation */
-
 /* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .nav-lists {
+    margin-right: 15rem;
+  }
 
-@media screen and (max-width: ) {
+  .product {
+    width: 70rem;
+  }
 
+  .main-heading {
+    font-size: 6.5rem;
+  }
+
+  .post-heading {
+    margin: 3.5rem 0 4rem 0;
+    font-size: 1.8rem;
+  }
+
+  .demo-btn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.1rem 1rem;
+    width: 15rem;
+  }
+
+  .evolving-text {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .codedby {
+    font-size: 1.8rem;
+  }
+
+  .copypara a {
+    font-size: 1.8rem;
+  }
 }
 
+@media screen and (max-width: 1040px) {
+  .navigation {
+    background-color: #fff;
+  }
 
+  .nav-lists {
+    margin-right: 3rem;
+  }
 
+  .nav-links a {
+    font-size: 1.5rem;
+  }
 
+  .product {
+    width: 57rem;
+  }
 
+  .new {
+    font-size: 1rem;
+  }
 
+  .pre-heading {
+    font-size: 1.3rem;
+  }
 
+  .main-heading {
+    font-size: 5.2rem;
+    line-height: 6rem;
+  }
 
+  .post-heading {
+    font-size: 1.5rem;
+    padding-right: 15rem;
+    margin: 1.8rem 0 2rem 0;
+  }
 
+  .demo-btn {
+    width: 13rem;
+    font-size: 1.1rem;
+  }
 
+  .evolving-text {
+    font-size: 1.1rem;
+  }
 
+  .footer {
+    margin-right: 1rem;
+  }
 
+  .challenge p {
+    font-size: 1rem;
+  }
 
+  .challenge a {
+    font-size: 1.5rem;
+  }
 
+  .codedby p {
+    font-size: 1rem;
+  }
 
+  .copy-para a {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .logo {
+    width: 2.8rem;
+  }
+
+  .nav-lists {
+    margin-right: 3rem;
+  }
+
+  .nav-links {
+    margin: 0 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+
+  .product {
+    width: 40rem;
+  }
+
+  .new {
+    font-size: .9rem;
+  }
+
+  .pre-heading {
+    font-size: 1rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+
+  .post-heading {
+    font-size: 1.2rem;
+    padding-right: 5rem;
+    margin: 1.4rem 0 1.8rem 0;
+    letter-spacing: .1rem;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .demo-btn {
+    width: 11rem;
+    font-size: .8rem;
+    padding: .8rem .5rem;
+  }
+
+  .evolving-text {
+    font-size: .8rem;
+    margin: .5rem 0 0 .3rem;
+  }
+
+  .footer {
+    margin-right: 1rem;
+  }
+
+  .challenge p {
+    font-size: .9rem;
+  }
+
+  .challenge a {
+    font-size: 1.4rem;
+  }
+
+  .codedby p {
+    font-size: .9rem;
+  }
+
+  .copy-para a {
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  
+}
 
 /* End of Responsive Design */
